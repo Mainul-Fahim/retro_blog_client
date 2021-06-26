@@ -8,7 +8,7 @@ const BlogContent = () => {
 
     useEffect(() => {
 
-        fetch(`http://localhost:5000/blogContent/${id}`)
+        fetch(`https://tranquil-badlands-31724.herokuapp.com/blogContent/${id}`)
             .then(res => res.json())
             .then(data => {
                 console.log(data);

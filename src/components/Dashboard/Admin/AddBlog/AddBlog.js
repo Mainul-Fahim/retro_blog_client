@@ -22,7 +22,7 @@ const AddBlog = () => {
             content: data.content,
             imageUrl: imageUrl,
         };
-        const url = `http://localhost:5000/addBlog`;
+        const url = `https://tranquil-badlands-31724.herokuapp.com/addBlog`;
         fetch(url, {
             method: 'POST',
             headers: {

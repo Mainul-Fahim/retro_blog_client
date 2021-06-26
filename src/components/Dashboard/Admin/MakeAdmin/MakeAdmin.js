@@ -18,7 +18,7 @@ const MakeAdmin = () => {
             email: data.email,
             //id: data.id,
         };
-        const url = `http://localhost:5000/addAdmin`;
+        const url = `https://tranquil-badlands-31724.herokuapp.com/addAdmin`;
         fetch(url, {
             method: 'POST',
             headers: {

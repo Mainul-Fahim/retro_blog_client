@@ -11,7 +11,7 @@ const Sidebar = () => {
     const [isAdmin, setIsAdmin] = useState(false);
 
     useEffect(() => {
-        fetch('http://localhost:5000/isAdmin', {
+        fetch('https://tranquil-badlands-31724.herokuapp.com/isAdmin', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
