@@ -19,15 +19,15 @@ const Navbar = () => {
                             <a class="nav-link  me-5 active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link  me-5" href="#">About</a>
+                            <a class="nav-link  me-5" href="#blogs">Blogs</a>
                         </li>
                         <li class="nav-item p-2 me-2">
                         <Link className="text-dark me-4 text-decoration-none" to="/dashboard" >
                              <span>Dashboard</span>
                         </Link>
                         </li>
-                        <li class="nav-item p-2 me-2">
-                            {loggedInUser.email?loggedInUser.name:<a class="nav-link  me-5 btn-primary text-white" href="/login">Login</a>}
+                        <li class="nav-item me-2">
+                            {loggedInUser.email?loggedInUser.name:<a class="nav-link  me-5 btn-primary text-white rounded-pill" href="/login">Login</a>}
                         </li>
                     </ul>
 

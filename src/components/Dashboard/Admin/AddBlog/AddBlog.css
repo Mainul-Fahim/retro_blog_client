@@ -1,0 +1,12 @@
+.addservice form{
+    padding: 10% 25%;
+    margin-right: 5%;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    background-color:lightcyan;
+    border-radius: 20px;
+}
+.addservice input{
+    margin: 5px 5px;
+   
+}
