@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 
 const BlogContent = () => {
-    
+
     const { id } = useParams();
     const [checkOutDetails, setCheckOutDetails] = useState([]);
 
@@ -17,10 +17,22 @@ const BlogContent = () => {
     }, [id])
 
     return (
-        <div>
-            <h3>{checkOutDetails.blogName}</h3>
-            <p>{checkOutDetails.content}</p>
-        </div>
+        <section className="container-fluid">
+            <article>
+                <div class="card text-center">
+                    <div class="card-header">
+                        <h3 class="display-5">{checkOutDetails.blogName}</h3>
+                    </div>
+                    <div class="card-body">
+                        <p style={{fontSize:'130%'}} class="card-text">{checkOutDetails.content}</p>
+                        
+                    </div>
+                    <div class="card-footer text-muted">
+                        2 days ago
+                    </div>
+                </div>
+            </article>
+        </section>
     );
 };
 

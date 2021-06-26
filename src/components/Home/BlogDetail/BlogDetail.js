@@ -4,10 +4,6 @@ import './BlogDetail.css';
 
 const BlogDetail = ({blogs}) => {
     
-    const handleSubmit = ()=>{
-        alert("Successfully applied");
-    }
-
     return (
         <div className="col-md-4 text-center mb-3">
            <div class="job-card card" styles="width: 18rem;">

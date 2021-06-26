@@ -3,38 +3,28 @@ import { Link } from 'react-router-dom';
 import { UserContext } from '../../../App';
 
 const Navbar = () => {
-   
-    const [loggedInUser,setLoggedInUser]=useContext(UserContext);
+
+    const [loggedInUser, setLoggedInUser] = useContext(UserContext);
     return (
         <div className="row">
-            <div className="col-md-4">
-                <h4 className="text-center mt-4">Retro Blog</h4>
-            </div>
-            <div className="col-md-8">
             <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid mt-3">
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link  me-5 active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link  me-5" href="#blogs">Blogs</a>
-                        </li>
-                        <li class="nav-item p-2 me-2">
-                        <Link className="text-dark me-4 text-decoration-none" to="/dashboard" >
-                             <span>Dashboard</span>
-                        </Link>
-                        </li>
-                        <li class="nav-item me-2">
-                            {loggedInUser.email?loggedInUser.name:<a class="nav-link  me-5 btn-primary text-white rounded-pill" href="/login">Login</a>}
-                        </li>
-                    </ul>
-
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav ms-auto p-3">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link ms-2" href="#"><Link className="text-dark me-4 text-decoration-none" to="/dashboard" >
+                                <span>Dashboard</span>
+                            </Link></a>
+                            <a class="nav-link p-2" href="#blogs">Blogs</a>
+                            {loggedInUser.email ? loggedInUser.name : <a class="nav-link  me-5 btn-primary text-white rounded-pill" href="/login">Login</a>}
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </nav>
-            </div>
+            </nav>
         </div>
     );
 };
