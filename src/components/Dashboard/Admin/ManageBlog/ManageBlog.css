@@ -5,3 +5,17 @@
     margin-bottom: 3%;
     
 }
+
+.manageblog{
+    
+}
+.manageblog h1{
+    margin-left: 180px;
+}
+/* @media screen and (max-width: 600px) {
+    .con {
+       flex-direction: column;
+       height: 100%;
+       margin-left: 30%;
+    }
+  } */

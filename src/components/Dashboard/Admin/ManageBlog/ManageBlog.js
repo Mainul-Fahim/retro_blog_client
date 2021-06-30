@@ -36,10 +36,10 @@ const ManageBlog = () => {
             <div className="col-md-2">
                 <Sidebar></Sidebar>
             </div>
-            <div className="col-md-10 mb-5">
+            <div className="col-md-10 mb-5 manageblog">
                 <h1 className="text-center">Manage Services</h1>
                 <br/>
-                <div style={{border: '1px solid cyan',height: '500px'}} className="ms-5 pt-5 ps-5 pe-5 table-responsive-sm">
+                <div style={{border: '1px solid cyan',height: '500px'}} class="table-responsive-sm" className="ms-5 pt-5 ps-5 pe-5 con">
                 <table class="table table-striped table-dark">
                 <thead>
                     <tr>

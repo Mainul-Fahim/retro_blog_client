@@ -64,7 +64,7 @@ const AddBlog = () => {
                 <div className="col-md-10 mb-5 addservice">
                     <h1 className="text-center">Add Blog</h1>
                     <br />
-                    <div style={{ border: '1px solid cyan', height: '500px' }} className="ms-5 pt-5 ps-5">
+                    <div style={{ border: '1px solid cyan', height: '500px' }} className="ms-5 pt-5 ps-5 con">
                         <form onSubmit={handleSubmit(onSubmit)}>
                             <h5>Blog Title</h5>
                             <input name="blogName" placeholder="Blog Name" ref={register} />

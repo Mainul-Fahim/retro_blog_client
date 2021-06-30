@@ -21,10 +21,10 @@ const BlogContent = () => {
             <article>
                 <div class="card text-center">
                     <div class="card-header">
-                        <h3 class="display-5">{checkOutDetails.blogName}</h3>
+                        <h3 style={{color: '#4CAF50'}} class="display-5">{checkOutDetails.blogName}</h3>
                     </div>
                     <div class="card-body">
-                        <p style={{fontSize:'130%'}} class="card-text">{checkOutDetails.content}</p>
+                        <p style={{fontSize:'125%',fontWeight:'480',textIndent:'50px',textAlign:'justify',letterSpacing:'3px'}} class="card-text">{checkOutDetails.content}</p>
                         
                     </div>
                     <div class="card-footer text-muted">
